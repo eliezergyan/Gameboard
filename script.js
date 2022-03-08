@@ -1,12 +1,12 @@
 var main = function() {
   $('.more-btn').on('click', (event) => {
-    $(event.currentTarget).siblings().toggleClass('more-menu')
+    $(event.currentTarget).siblings('.more-menu').toggle()
   });
   $('.share').on('click', (event) => {
-    $(event.currentTarget).next().toggleClass('share-menu')
+    $(event.currentTarget).next().toggle()
   });
-  $('.bell').on('click', (event) => {
-    $(event.currentTarget).children().toggleClass('active');
+  $('.notification').on('click', (event) => {
+    $(event.currentTarget).toggleClass('active');
   })
 };
 
